@@ -1,0 +1,180 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--bg-primary);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background: var(--bg-primary);
+}
+
+.sidebar {
+    width: 300px;
+    background: rgba(17, 24, 39, 0.95);
+    border-right: 2px solid rgba(0, 255, 255, 0.2);
+    padding: 2rem;
+}
+
+.backButton {
+    padding: 0.75rem 1.25rem;
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: var(--radius-md);
+    color: var(--accent-cyan);
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.backButton:hover {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+.sidebarTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.feature {
+    padding: 1rem;
+    background: rgba(0, 153, 255, 0.1);
+    border: 1px solid rgba(0, 153, 255, 0.3);
+    border-radius: var(--radius-md);
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+.chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+
+.systemMessage {
+    padding: 2rem;
+    background: rgba(0, 153, 255, 0.1);
+    border: 1px solid rgba(0, 153, 255, 0.3);
+    border-radius: var(--radius-lg);
+    margin-bottom: 2rem;
+}
+
+.systemMessage p {
+    margin: 0 0 1rem 0;
+    color: var(--text-primary);
+}
+
+.systemMessage ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.systemMessage li {
+    color: var(--text-secondary);
+    margin: 0.5rem 0;
+}
+
+.note {
+    font-size: 0.95rem;
+    color: var(--accent-cyan);
+    margin-top: 1rem;
+}
+
+.placeholderChat {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholderMessage {
+    padding: 3rem;
+    background: rgba(255, 165, 0, 0.15);
+    border: 2px solid rgba(255, 165, 0, 0.4);
+    border-radius: var(--radius-lg);
+    text-align: center;
+}
+
+.placeholderMessage p {
+    font-size: 1.125rem;
+    color: #fbbf24;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.inputBar {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(17, 24, 39, 0.8);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: var(--radius-lg);
+}
+
+.input {
+    flex: 1;
+    padding: 1rem;
+    background: rgba(26, 31, 46, 0.8);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.sendButton {
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--bg-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sendButton:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
+}
+
+.sendButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

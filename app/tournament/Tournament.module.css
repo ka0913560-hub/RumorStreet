@@ -1,0 +1,125 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--bg-primary);
+}
+
+.container {
+    min-height: 100vh;
+    background: var(--bg-primary);
+}
+
+.overlay {
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 0, 255, 0.05));
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.modal {
+    max-width: 700px;
+    width: 100%;
+    padding: 3rem;
+    background: rgba(17, 24, 39, 0.95);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.icon {
+    color: #ffd700;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffd700, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 2rem 0;
+}
+
+.modes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.modeCard {
+    padding: 2rem;
+    background: rgba(26, 31, 46, 0.8);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modeCard svg {
+    color: #ffd700;
+}
+
+.modeCard h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.modeCard p {
+    color: var(--text-secondary);
+    margin: 0 0 1rem 0;
+}
+
+.modeCard button {
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 215, 0, 0.2);
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-radius: var(--radius-md);
+    color: #ffd700;
+    font-weight: 600;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.placeholder {
+    padding: 2rem;
+    background: rgba(255, 165, 0, 0.15);
+    border: 2px solid rgba(255, 165, 0, 0.4);
+    border-radius: var(--radius-md);
+    margin-bottom: 2rem;
+}
+
+.placeholder p {
+    font-size: 1.125rem;
+    color: #fbbf24;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.backButton {
+    padding: 1rem;
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: var(--radius-md);
+    color: var(--accent-cyan);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.backButton:hover {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
