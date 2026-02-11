@@ -1,11 +1,12 @@
 .container {
     position: relative;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem 1rem;
 }
 
 .background {
